@@ -3,7 +3,12 @@
   "author": "Kiprop Yego",
   "editor": "wokwi",
   "parts": [
-    { "type": "wokwi-pi-pico", "id": "pico", "top": 0, "left": 0, "attrs": {} }
+    { "type": "wokwi-pi-pico", "id": "pico", "top": 0, "left": 0, "attrs": {} },
+    { "type": "wokwi-dht22", "id": "dht22", "top": 80, "left": 230, "attrs": {} }
   ],
-  "connections": []
+  "connections": [
+    [ "dht22:VCC", "pico:3V3", "red", [] ],
+    [ "dht22:SDA", "pico:GP15", "green", [] ],
+    [ "dht22:GND", "pico:GND.1", "black", [] ]
+  ]
 }

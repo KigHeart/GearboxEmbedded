@@ -1,4 +1,4 @@
 [wokwi]
 version = 1
-firmware = "build/blink_led.elf"
-elf = "build/blink_led.elf"
+firmware = "build/dht22_sensor.elf"
+elf = "build/dht22_sensor.elf"
